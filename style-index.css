@@ -207,36 +207,57 @@ main h2{
     padding: 50px;
 }
 
-.slides img{
-    width: 100vh;
-    height: 60vh;
-    object-fit: cover;
-    margin-right: 10px;
-    flex-shrink: 0;
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .slides {
     display: flex;
-    width: 300%; /* ou o valor adequado para o número de slides */
-    overflow: hidden;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+    text-align: center;
+
 }
 
+.slides img {
+    width: 100vw;
+    height: 80vh;
+    margin: 0px 25vh;
+}
 
-.slide{
+button {
     position: absolute;
     transform: translateY(-50%);
-    background-color: #ff4545;
+    background-color:#ff4545;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    font-size: 1.5em;
+    opacity: 55%;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+     &:hover{
+        opacity: 100%;
+     }
 }
 
+.proximo {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
 
-.carousel-container {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    position: relative;
+.volta {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 10;
 }

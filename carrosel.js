@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let currentSlide = 0;
 
-    function showSlide(index) {
+    let currentSlide = 0; 
+
+    function showSlide(index){
         const slides = document.querySelector('.slides');
 
         if (slides) {
@@ -30,6 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide - 1);
     }
 
-    // Inicialização do carrossel
     showSlide(currentSlide);
-});
