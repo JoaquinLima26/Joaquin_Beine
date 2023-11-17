@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', function () { //executar o script 
       nav.classList.toggle("active"); //essa função tira se tem e coloca se nao tem a função active, que via CSS faz o menu aparecer e sumir
     });
   });
-  
+
